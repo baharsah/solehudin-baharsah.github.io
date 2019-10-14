@@ -1,0 +1,18 @@
+/*  Solehudin Baharsah 2019
+    * Using : Isotype ; 
+    * 5 oct 2019
+    */
+/* jika ukuran mobile */
+
+
+@media (max-width: 700px  ){
+
+    #preloader {
+        display: none ; 
+    }
+}
+@media (max-height: 560px){
+    #preloader {
+        display: none ; 
+    }
+}

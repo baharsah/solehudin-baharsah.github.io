@@ -1,0 +1,23 @@
+{
+    "name": "Solehudin Baharsah Portofolio",
+    "homepage": "https://solehudin-baharsah.github.io",
+    "authors": [
+      "Solehudin Baharsah <solehudin.baharsah11@gmail.com>"
+    ],
+    "ignore": [
+      "/.*",
+      "node_modules",
+      "bower_components",
+      "composer.json",
+      "documentation"
+    ],
+    "dependencies": {
+      "bootstrap": "^4.3.1",
+      "jquery": "^3.4.1",
+      "font-awesome": "^4.7",
+      "Ionicons": "ionicons#^2.0.1",
+      "jquery-ui": "^1.12.1"    },
+    "resolutions": {
+      "jquery": "^3.4.1"
+    }
+  }

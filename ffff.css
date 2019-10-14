@@ -1,0 +1,515 @@
+/*  Solehudin Baharsah 2019
+    * Using : Isotype ; 
+    * 5 oct 2019
+    */
+    body {
+        content: "「クローン」をする人だけなら、それは問題ありません。したがって、元気を！";
+        background-image: url("chys-bg.svg");
+        background-attachment: fixed; 
+        margin: 0 ; 
+        padding : 0  ;
+
+    }
+    /* ===================================== Animation Rulesheets ============================= */
+    @keyframes btw {
+        from {
+            background-color: rgba(94, 87, 87,0.7) ; 
+        }to{
+            background-color: rgba(255,255, 255,0.7)
+        }
+    }
+
+    @keyframes sfa {
+        from {
+            clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        }to{
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        }
+    }
+    @keyframes ltra{
+        from {
+            transform: translateX(0)
+        }to{
+            transform: translateX(500px )
+        }
+    }
+    @keyframes line {
+        from{
+            width: 0% ; 
+        }to{
+            width: 100% ; 
+        }
+    }
+    @keyframes line-width{
+        from{
+            height: 0.2% ; 
+            
+        }to{
+           height: 1%;
+        }
+    }
+    
+
+
+    /* Interface Preloader */
+
+
+    #preloader {
+        z-index: 200 ;
+        position: fixed ;
+        width: 100% ; 
+        height: 100%; 
+
+
+    }
+        /* BG Transfrom from black to white */
+
+    #preloader > .btw {
+        background-color: rgba(94, 87, 87,0.9) ; 
+        animation-name: btw ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.18,.89,.32,1.28) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 500ms ; 
+        width: 100% ; 
+        height : 100% ; 
+        position: absolute ;
+    }
+
+    #preloader > .box-face {
+        position: absolute;
+        width: 1300px ; 
+        height: 550px ; 
+        top : 40px ; 
+        left: 40px;
+       /* animation-name: ltra; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.18,.89,.32,1.28) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 1500ms ; */
+    }
+    .box-row-1{
+        position: absolute; 
+    }
+      .box-face-1-row-1 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 10ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#a0c0e2 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-2-row-1 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 100ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#f0a693 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-3-row-1 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 200ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#68d847 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-4-row-1 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 300ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#fbf3f2 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-5-row-1 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 400ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+       background-image: url("d901a0a485520bbca7cfdc723a29429b.jpg");
+      background-position-y: -580px;
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-row-2{
+        position: absolute; 
+        left: 410px;
+    }
+      .box-face-1-row-2 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 100ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#a0c0e2 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-2-row-2 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 200ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#f0a693 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-3-row-2 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 300ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#68d847 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-4-row-2 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 400ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#fbf3f2 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-5-row-2 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 500ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+       background-image: url("d901a0a485520bbca7cfdc723a29429b.jpg");
+       background-position-y: -580px;
+        position: absolute;
+        background-position-x: -400px;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-row-3{
+        position: absolute; 
+        left: 820px;
+    }
+      .box-face-1-row-3 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 150ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#a0c0e2 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-2-row-3 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 250ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#f0a693 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-3-row-3 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 350ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#68d847 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-4-row-3 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 450ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+        background-color:#fbf3f2 ; 
+        position: absolute;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    .box-face-5-row-3 {
+        background-color: rgb(94, 87, 87) ; 
+        animation-name: sfa ; 
+        animation-duration: 1500ms ;
+        animation-timing-function: cubic-bezier(.08,.82,.17,1) ;  
+        animation-fill-mode: both ; 
+        animation-delay: 550ms ; 
+        clip-path: polygon(0 48%, 100% 49%, 100% 49%, 0 48%);
+       background-image: url("d901a0a485520bbca7cfdc723a29429b.jpg");
+       background-position-y: -580px;
+        position: absolute;
+        background-position-x: -790px;
+        width: 400px ; 
+        height: 500px ; 
+        top : 20px ; 
+        left: 20px;
+    }
+    /* line */
+
+
+    .line{
+        z-index:10 ; 
+        animation-name: line ,line-width; 
+        animation-duration: 1000ms , 500ms ;
+        animation-timing-function: cubic-bezier(.39,.58,.57,1)   ; 
+        animation-delay: 0ms,1000ms; 
+        animation-fill-mode: both ; 
+        background-color: red ; 
+        width: 0% ;
+        top:50% ; 
+        position: absolute;
+        height: 0.2%;
+
+    }
+    /* Title interface */
+    @keyframes tr{
+        from {
+            transform: translateX(-500px) ;
+            filter: blur(20px);
+            
+        }to{
+            transform: translatex(0) ;
+            filter : blur(0);
+        }
+    }
+    @keyframes fadeIn{
+        from {
+            opacity: 0;
+        }to{
+            opacity: 1;
+        }
+    }
+
+    
+    .tface{ 
+        animation-name: tr;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(.39,.58,.57,1) ;
+        width : 450px ; 
+        height: 100px;
+        position: absolute ; 
+        z-index: 11;
+        transform: perspective(0px) translateZ(200px);
+        left: calc(25% + 100px);
+        top: calc(25% + 50px);
+    }
+    .tface > .t {
+        font-size: 40px ;
+        font-family: 'Exo', sans-serif;
+    }
+    .tface-exit{
+        animation-name: fadeIn;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(.39,.58,.57,1) ;
+        animation-delay: 1s  ;
+        opacity: 0;
+        animation-fill-mode: both;  
+        position: absolute;
+        font-family: 'Exo', sans-serif;
+        z-index: 12;
+        width: 100px ; 
+        height: 100px;
+        left: calc(25% + 225px);
+        border-radius: 50% ; 
+        padding:12px ; 
+        background-color: #68d847 ; 
+    }
+    #left-profile > .container {
+        padding : 14px ; 
+    }
+    
+ #left-profile {
+    position: fixed;
+    height: 100%;
+    width:26% ; 
+    background-color: #20c997 ;  
+
+ }
+ #left-profile::before {
+     
+     padding : 5px ;
+     font-family: 'Exo 2', sans-serif;
+     position: absolute;
+     background-color: rebeccapurple ; 
+     color : white ; 
+     font-style: bold ; 
+     content: "Profile";
+     font-size : 17px ; 
+     border-bottom-right-radius: 12px;
+     top : 20px ;  
+     
+ }
+ #left-profile::after {
+     position: absolute;
+     top:20px ; 
+     width: 100% ; 
+     height: 0.5% ; 
+     background-color: rebeccapurple ;
+     content : "";
+
+ }
+ .me{
+     margin-left: 25% ; 
+     
+ }
+ .jumbotron {
+    background-color: #8866eedd ; 
+    font-family: 'Exo 2', sans-serif;
+ }
+ .lp-p > .row  {
+     margin : 8px ; 
+     padding: 10px;
+ }
+.lp-p{
+    margin-left: 10px ; 
+    margin-top: 60px ; 
+    font-family: 'Exo', sans-serif;
+}
+.me-2{
+    
+    transform : translateX(161px );
+    max-width : 70% ;  
+    padding : 40px ; 
+    
+
+}
+@media (max-width: 700px){
+    .me-2{
+    
+        transform : translateX(1px );
+        max-width : 100% ;
+        padding : 20px ;   
+        
+    
+    }
+    #left-profile {
+        position: relative;
+        width : 100% ; 
+    }
+    .lp-p {
+        margin-top: 0 ; 
+    }
+    .me  {
+        margin-left: 0 ; 
+    }
+    .me-2{
+        margin-left : 0 ; 
+    }
+    #left-profile > .container{
+        transform: translate(50px,20px);
+    }
+}
+.content{
+    background-color: rgba(255, 255, 255, 0.963) ; 
+}
+div > .color-1 {
+    background-color : #68d847ff ; 
+    color : white ; 
+    font-family : "Exo";
+    padding : 14px ; 
+    font-size : 24px ; 
+} 
+div > .color-2 {
+    background-color : #cc6600ff ; 
+    color : white ; 
+    font-family : "Exo";
+    padding : 14px ; 
+    font-size : 24px ; 
+}  
+div > .color-3 {
+    background-color : #ee3399ff ; 
+    color : white ; 
+    font-family : "Exo";
+    padding : 14px ; 
+    font-size : 24px ; 
+}
+ .ifo{
+    font-family : "Exo";
+    margin : 4px ;
+    font-size : 1.25rem ; 
+} 
