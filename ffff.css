@@ -3,7 +3,7 @@
     * 5 oct 2019
     */
     body {
-        content: "「クローン」をする人だけなら、それは問題ありません。したがって、元気を！";
+        content: "";
         background-image: url("chys-bg.svg");
         background-attachment: fixed; 
         margin: 0 ; 
@@ -407,9 +407,19 @@
     position: fixed;
     height: 100%;
     width:26% ; 
-    background-color: #20c997 ;  
+    color : white ; 
+    background-color: #1188aaff ;  
 
  }
+ a {
+     color: white ;
+     font-size: 18px ; 
+ }
+ a:hover {
+    color: white ;
+    font-size: 18px ;
+    text-decoration: none ;  
+}
  #left-profile::before {
      
      padding : 5px ;
@@ -438,7 +448,7 @@
      
  }
  .jumbotron {
-    background-color: #8866eedd ; 
+    background-color: #aadd00dd ; 
     font-family: 'Exo 2', sans-serif;
  }
  .lp-p > .row  {
@@ -446,7 +456,6 @@
      padding: 10px;
  }
 .lp-p{
-    margin-left: 10px ; 
     margin-top: 60px ; 
     font-family: 'Exo', sans-serif;
 }
@@ -458,7 +467,7 @@
     
 
 }
-@media (max-width: 700px){
+@media (max-width: 1234px){
     .me-2{
     
         transform : translateX(1px );
@@ -488,21 +497,21 @@
     background-color: rgba(255, 255, 255, 0.963) ; 
 }
 div > .color-1 {
-    background-color : #68d847ff ; 
+    background-color : #66ccffff ; 
     color : white ; 
     font-family : "Exo";
     padding : 14px ; 
     font-size : 24px ; 
 } 
 div > .color-2 {
-    background-color : #cc6600ff ; 
+    background-color : #ffcc22ff ; 
     color : white ; 
     font-family : "Exo";
     padding : 14px ; 
     font-size : 24px ; 
 }  
 div > .color-3 {
-    background-color : #ee3399ff ; 
+    background-color : #aadd00ff ; 
     color : white ; 
     font-family : "Exo";
     padding : 14px ; 
@@ -513,3 +522,21 @@ div > .color-3 {
     margin : 4px ;
     font-size : 1.25rem ; 
 } 
+#box-content >  .container-fluid > .row > div {
+    margin: 14px ; 
+    width: 250px ; 
+    height: 150px;
+    border-color: #ffcc22ff ; 
+    border-style: solid ; 
+    border-width: 3px ;
+}
+a > .title {
+    font-family: "Exo" ; 
+    font-size: 18px ;
+    color: black ;  
+}
+.time{
+    font-family: "Exo" ; 
+    font-size: 14px ;
+    color: black ; 
+}
